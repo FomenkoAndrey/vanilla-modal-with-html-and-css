@@ -1,21 +1,18 @@
-/* Застосовуємо box-sizing для всіх елементів, включаючи псевдоелементи */
 *,
 *::before,
 *::after {
-  box-sizing: border-box; /* Включає padding і border у загальні розміри елементів */
+  box-sizing: border-box;
 }
 
-/* Базові стилі для html */
 html {
-  font-size: 16px; /* Встановлюємо базовий розмір шрифта для кореневого елемента */
+  font-size: 16px;
 }
 
-/* Базові стилі для тіла документа */
 body {
-  margin: 20px; /* Встановлюємо зовнішній відступ */
-  font-family: 'Segoe UI', Arial, sans-serif; /* Вказуємо пріоритетний набір шрифтів */
-  line-height: 1.5; /* Встановлюємо висоту рядка для читабельності */
-  color: #333; /* Темний сірий колір тексту для кращого контрасту */
+  margin: 20px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.5;
+  color: #333333;
 }
 
 /* Початкові стилі для модального вікна (<dialog>) і його backdrop */
@@ -33,7 +30,6 @@ dialog[open]::backdrop {
   scale: 1; /* Повертаємо нормальний масштаб */
 
   @starting-style {
-    /* Непідтримуваний синтаксис; потрібно замінити на keyframes */
     opacity: 0; /* Початковий стан анімації */
     scale: 1.05; /* Початковий масштаб */
   }
@@ -41,14 +37,14 @@ dialog[open]::backdrop {
 
 /* Стилі для самого модального вікна */
 dialog {
-  border: none; /* Видаляємо рамку */
-  border-radius: 16px; /* Задаємо скруглення кутів */
-  padding: 2.5rem; /* Встановлюємо внутрішні відступи */
-  background: white; /* Білий фон для модального вікна */
-  max-width: 90vw; /* Максимальна ширина вікна (90% від ширини екрана) */
-  width: 500px; /* Фіксована ширина модального вікна */
+  border: none;
+  border-radius: 16px;
+  padding: 2.5rem;
+  background: white;
+  max-width: 90vw;
+  width: 500px;
   margin: auto;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* Додаємо тінь для глибини */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 /* Стилі для backdrop модального вікна */
@@ -66,14 +62,14 @@ dialog > form {
 
 /* Базові стилі для кнопки */
 button {
-  padding: 0.75rem 1.5rem; /* Встановлюємо внутрішні відступи для кнопки */
-  border: none; /* Видаляємо рамку */
-  border-radius: 8px; /* Додаємо скруглення кутів */
-  background: #3b82f6; /* Синій фон кнопки */
-  color: white; /* Білий колір тексту */
-  font-weight: 500; /* Напівжирний текст */
-  cursor: pointer; /* Змінюємо курсор на "руку" при наведенні */
-  transition: all 0.2s; /* Додаємо плавний перехід для ефектів кнопки */
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
 /* Ефекти для кнопки при наведенні */
