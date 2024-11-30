@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Кнопка для відкриття модального вікна -->
-    <!-- type="button" визначає, що це звичайна кнопка, яка не є частиною форми -->
-    <!-- onclick="overlayMenu.showModal()" викликає метод showModal(), який відкриває модальне вікно -->
-    <button type="button" onclick="overlayMenu.showModal()">Open modal</button>
 
-    <!-- Модальне вікно -->
-    <!-- Тег <dialog> створює нативне модальне вікно, яке можна відкривати і закривати за допомогою JavaScript -->
-    <!-- id="overlayMenu" забезпечує ідентифікацію модального вікна для JavaScript -->
-    <!-- aria-labelledby="modalTitle" забезпечує доступність, зв'язуючи модальне вікно із заголовком -->
-    <dialog id="overlayMenu" aria-labelledby="modalTitle">
-      <!-- Форма всередині модального вікна -->
-      <!-- method="dialog" означає, що форма автоматично закриє модальне вікно при сабміті -->
-      <form method="dialog">
-        <!-- Кнопка для закриття модального вікна -->
-        <!-- type="submit" викликає закриття форми, а разом із нею й модального вікна -->
-        <!-- aria-label="Close modal" забезпечує додаткову доступність, описуючи дію кнопки -->
-        <button type="submit" aria-label="Close modal">Close modal</button>
-      </form>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Static Template</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-      <!-- Заголовок модального вікна -->
-      <!-- id="modalTitle" зв'язується з атрибутом aria-labelledby для забезпечення доступності -->
-      <h1 id="modalTitle">Modal Title</h1>
+<body>
+  <!-- Кнопка для відкриття модального вікна -->
+  <!-- type="button" визначає, що це звичайна кнопка, яка не є частиною форми -->
+  <!-- onclick="overlayMenu.showModal()" викликає метод showModal(), який відкриває модальне вікно -->
+  <button type="button" onclick="overlayMenu.showModal()">Open modal</button>
 
-      <!-- Текстовий вміст модального вікна -->
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos pariatur
-        dolorem nostrum eos. Reprehenderit fugiat quisquam deserunt, ullam id
-        exercitationem quas similique deleniti, reiciendis sint sunt adipisci
-        eligendi accusamus facilis!
-      </p>
-    </dialog>
-  </body>
+  <!-- Модальне вікно -->
+  <!-- Тег <dialog> створює нативне модальне вікно, яке можна відкривати і закривати за допомогою JavaScript -->
+  <!-- id="overlayMenu" забезпечує ідентифікацію модального вікна для JavaScript -->
+  <!-- aria-labelledby="modalTitle" забезпечує доступність, зв'язуючи модальне вікно із заголовком -->
+  <dialog id="overlayMenu" aria-labelledby="modalTitle">
+    <!-- Форма всередині модального вікна -->
+    <!-- method="dialog" означає, що форма автоматично закриє модальне вікно при сабміті -->
+    <form method="dialog">
+      <!-- Кнопка для закриття модального вікна -->
+      <!-- type="submit" викликає закриття форми, а разом із нею й модального вікна -->
+      <!-- aria-label="Close modal" забезпечує додаткову доступність, описуючи дію кнопки -->
+      <button type="submit" aria-label="Close modal">Close modal</button>
+    </form>
+
+    <!-- Заголовок модального вікна -->
+    <!-- id="modalTitle" зв'язується з атрибутом aria-labelledby для забезпечення доступності -->
+    <h1 id="modalTitle">Modal Title</h1>
+
+    <!-- Текстовий вміст модального вікна -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos pariatur
+      dolorem nostrum eos. Reprehenderit fugiat quisquam deserunt, ullam id
+      exercitationem quas similique deleniti, reiciendis sint sunt adipisci
+      eligendi accusamus facilis!
+    </p>
+  </dialog>
+</body>
+
 </html>
